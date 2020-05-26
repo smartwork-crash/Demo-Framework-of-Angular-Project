@@ -1,0 +1,73 @@
+<mat-card class="mat-card-header">
+  Patient List
+</mat-card>
+<mat-card class="mat-card-body">
+  <mat-card-title>
+    <button mat-raised-button class="button">search</button>
+    <button mat-raised-button class="button">Assign To Case {{caseId}}</button>
+    <button mat-raised-button class="button">Add New Patient</button>
+    <button mat-raised-button class="button">Export</button>
+  </mat-card-title>
+  <mat-card-content>
+    <!-- class that can be added in table class for strips and howering:  table-striped table-no-bordered table-hover -->
+    <table datatable [dtOptions]="dtOptions" [dtTrigger] ="dttriggers" class="table ">
+      <thead>
+        <tr>
+          <th class="search-header-text">Search Patient</th>
+          <th>
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Search ID" name="search-id" />
+            </mat-form-field>
+          </th>
+          <th>
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Search First Name" name="search-fname" />
+            </mat-form-field>
+          </th>
+          <th>
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Search Last Name" name="search-lname" />
+            </mat-form-field>
+          </th>
+          <th>
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Search DOB" name="search-dob" />
+            </mat-form-field>
+          </th>
+          <th>
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Search Email" name="search-email" />
+            </mat-form-field>
+          </th>
+          <th>
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Search Phone" name="search-phone" />
+            </mat-form-field>
+          </th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Patient ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>DOB</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>
+            <mat-radio-button></mat-radio-button>
+          </td>
+          <td>{{patient.id}}</td>
+          <td>{{patient.fname}}</td>
+          <td>{{patient.lname}}</td>
+          <td>{{patient.dob}}</td>
+          <td>{{patient.email}}</td>
+          <td>{{patient.phone}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card-content>
+</mat-card>

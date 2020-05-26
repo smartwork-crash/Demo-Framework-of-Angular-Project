@@ -1,0 +1,52 @@
+.mat-card-header{
+    font-size: 25px;
+    color:rgb(77, 80, 104);
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.mat-card-body{
+color:rgb(77, 80, 104);
+}
+
+.button{
+    background-color: rgb(77, 80, 104);
+    color: aliceblue;
+    margin-left : 20px;
+    float: right;
+}
+
+mat-card-title{
+    height:100%
+}
+
+mat-card-content{
+    border-top: 2px solid;
+}
+
+mat-panel-title{
+    font-size: 20px;
+    font-weight: bolder;
+    float: right;
+}
+
+
+.inner-card{
+    background-color: #F0F0F7;
+    margin-bottom: 10px;
+}
+
+.card-icon{
+    float: right;
+    cursor: pointer;
+}
+
+.add-button{
+    background-color: yellow;
+    float: right;
+}
+
+.radio-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }

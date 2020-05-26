@@ -1,0 +1,51 @@
+.mat-card-header{
+    font-size: 25px;
+    color:rgb(77, 80, 104);
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.mat-card-body{
+color:rgb(77, 80, 104);
+}
+
+.button{
+    background-color: rgb(77, 80, 104);
+    color: aliceblue;
+    margin-left : 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.divider{
+    height:5px;
+
+}
+
+
+table {    
+    table-layout:fixed;
+    width: 100%;       
+}
+table td {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+tbody{
+    border-style: inset; 
+    
+}
+
+tr{
+    border-top: 2px solid;
+}
+
+th{
+    border-top: 2px solid;
+}
+
+.search-header-text{
+    vertical-align: middle;
+}
+

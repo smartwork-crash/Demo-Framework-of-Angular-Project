@@ -1,0 +1,71 @@
+<!-- <ng-container [ngSwitch]="input.type">
+  <ng-template [ngSwitchCase]="'checkbox'">
+    <mat-checkbox [(ngModel)]="input.value" [formControlName]="input.name" [disabled]="disabled">
+      {{input.label}}
+    </mat-checkbox>
+    <ng-container *ngFor="let validation of input.validations;" ngProjectAs="mat-error">
+      <mat-error *ngIf="patientForm.get(field.name).hasError(validation.name)">
+        {{validation.message}}</mat-error>
+    </ng-container>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'radiobutton'">
+    <mat-radio-group>
+      <mat-radio-button [name]="input.name" [formControlName]="input.name"
+        [(ngModel)]="input.value">
+      </mat-radio-button>
+    </mat-radio-group>
+    <ng-container *ngFor="let validation of input.validations;" ngProjectAs="mat-error">
+      <mat-error *ngIf="patientForm.get(field.name).hasError(validation.name)">
+        {{validation.message}}</mat-error>
+    </ng-container>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'dropdown'">
+    <mat-form-field>
+      <mat-label>{{input.label}}</mat-label>
+      <mat-select [name]="input.name" [formControlName]="input.name">
+        <mat-option *ngFor="let option of input.options" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-select>
+      <ng-container *ngFor="let validation of input.validations;" ngProjectAs="mat-error">
+        <mat-error *ngIf="patientForm.get(field.name).hasError(validation.name)">
+          {{validation.message}}</mat-error>
+      </ng-container>
+    </mat-form-field>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'datepicker'">
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" [formControlName]="input.name"
+        [placeholder]="input.placeholder">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-hint></mat-hint>
+      <ng-container *ngFor="let validation of input.validations;" ngProjectAs="mat-error">
+        <mat-error *ngIf="patientForm.get(field.name).hasError(validation.name)">
+          {{validation.message}}
+        </mat-error>
+      </ng-container>
+    </mat-form-field>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'textarea'">
+    <mat-form-field>
+      <textarea matInput [name]="input.name" [formControlName]="input.name" type="text"
+        [placeholder]="input.label" [(ngModel)]=input.value>
+          </textarea>
+      <ng-container *ngFor="let validation of input.validations;" ngProjectAs="mat-error">
+        <mat-error *ngIf="patientForm.get(field.name).hasError(validation.name)">
+          {{validation.message}}</mat-error>
+      </ng-container>
+    </mat-form-field>
+  </ng-template>
+  <ng-template ngSwitchDefault>
+    <mat-form-field>
+      <input matInput [name]="input.name" [formControlName]="input.name" type="text"
+        [placeholder]="input.label" [(ngModel)]=input.value>
+      <ng-container *ngFor="let validation of input.validations;" ngProjectAs="mat-error">
+        <mat-error *ngIf="patientForm.get(field.name).hasError(validation.name)">
+          {{validation.message}}</mat-error>
+      </ng-container>
+    </mat-form-field>
+  </ng-template>
+</ng-container> -->

@@ -1,0 +1,34 @@
+ [
+    {
+      "id": "1",
+      "fname": "Garry",
+      "lname": "Stark",
+      "dob": "1988-05-06T10:58:01.590Z",
+      "email": "garry@rediff.com",
+      "phone": "222 222 2222"
+    },
+    {
+      "id": "2",
+      "fname": "Pepper",
+      "lname": "Potts",
+      "dob": "1988-05-06T10:58:01.590Z",
+      "email": "pepper@gmail.com",
+      "phone": "333 333 3333"
+    },
+    {
+      "id": "3",
+      "fname": "Lana",
+      "lname": "Watson",
+      "dob": "1988-05-06T10:58:01.590Z",
+      "email": "lana@outlook.com",
+      "phone": "444 444 4444"
+    },
+    {
+      "id": "4",
+      "fname": "Robin",
+      "lname": "Samuel",
+      "dob": "1988-05-06T10:58:01.590Z",
+      "email": "robin@hotmail.com",
+      "phone": "345 765 8888"
+    }
+  ]
