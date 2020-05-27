@@ -21,7 +21,7 @@ import { AclService } from './core/services/acl.service';
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements AfterViewInit, OnInit {
-	title = 'Metronic';
+	title = 'Demo-project';
 
 	@HostBinding('style') style: any;
 	@HostBinding('class') classes: any = '';
